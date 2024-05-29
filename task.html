@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of onclick</title>
+</head>
+<body>
+    
+    <!--this code depicts a resturant's menu 
+    where a customer orders variety of food which are 
+    different price and gets the total of printed on the console. 
+    -->
+    <button  onclick="
+    coffeeOrder += 5;
+        console.log(`Coffee order: $${coffeeOrder}
+        `);
+        ">
+        Coffee
+    </button>
+    <button onclick="
+    bagelOrder += 2;
+    console.log(`bagel order: $${bagelOrder}
+    `)
+    "> 
+        bagels 
+    </button>
+    <button onclick="
+    soupOrder += 9;
+    console.log(`soup order: $${soupOrder}
+    `)
+    ">
+        soup
+    </button>
+    <button onclick="
+    console.log(`Total bill: $${coffeeOrder + bagelOrder + soupOrder}
+    `)
+    "> 
+        Total
+    </button>
+   <script src="task.js"> </script> 
+</body>
+</html>
